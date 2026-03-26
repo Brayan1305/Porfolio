@@ -1,52 +1,86 @@
-body{
-background:black;
-color: white;
+body {
+    background: black;
+    color: white;
+    margin: 0;
+    font-family: sans-serif;
 }
-.header{
+
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px;
+    padding: 20px 5%;
 }
-h2{
+
+h2 {
     font-size: 20px;
 }
-.lien{
-    border: solid white;
+
+.lien {
+    border: solid white 1px;
     border-radius: 30px;
     font-size: 20px;
     display: flex;
     gap: 30px;
-    padding: 20px;
+    padding: 15px 25px;
 }
-h1{
-    font-size: 50px;
-}
-a{
+
+a {
     color: white;
-}
-.milieu{
-    padding-top: 100px;
-}
-button{
-    color: black;
-    height: 50px;
-    width: 200px;
-    border-radius: 20px;
-    margin-top: 20px;
-    background-color: blueviolet;}
-#developpeur{
-    height: 400px;
-    width: 650px;
-}
-.duMilieu{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
-}
-a{
     text-decoration: none;
 }
-.lien2{
-    gap: 100px;
+
+.a {
+    color: blueviolet;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 1.1;
+}
+
+.duMilieu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.milieu {
+    max-width: 550px;
+}
+
+button {
+    color: white;
+    height: 50px;
+    width: 200px;
+    border-radius: 25px;
+    margin-top: 20px;
+    background-color: blueviolet;
+    border: none;
+}
+
+#developpeur {
+    height: 400px;
+    width: 650px;
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 800px) {
+    .duMilieu {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 40px;
+    }
+
+    #developpeur {
+        width: 90%;
+        height: auto;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
